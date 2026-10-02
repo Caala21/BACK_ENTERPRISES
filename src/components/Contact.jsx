@@ -36,7 +36,7 @@ export default function Contact() {
         <div className="section-head">
           <div className="section-tag">Contact</div>
           <h2>Tell us what you need built</h2>
-          <p>Send an enquiry and we will reply within one business day.</p>
+          <p>Send an enquiry and we will reply AS SOON AS POSSIBLE.</p>
         </div>
 
         <div className="contact-grid">
@@ -44,7 +44,7 @@ export default function Contact() {
             <p><FaWhatsapp aria-hidden="true" /> <a href={waLink()} target="_blank" rel="noopener noreferrer">{SITE.phoneDisplay}</a> (WhatsApp)</p>
             <p><FaPhone aria-hidden="true" /> <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a></p>
             <p><FaEnvelope aria-hidden="true" /> <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
-            <p>Working with clients worldwide. Based in East Africa (UTC+3).</p>
+            <p>Working with clients worldwide.</p>
             <SocialLinks />
           </div>
 
