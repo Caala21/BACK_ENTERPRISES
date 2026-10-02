@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa'
-import { SITE, waLink } from '../site'
+import { SITE } from '../site'
 import SocialLinks from './SocialLinks.jsx'
 
 export default function Contact() {
@@ -36,15 +35,13 @@ export default function Contact() {
         <div className="section-head">
           <div className="section-tag">Contact</div>
           <h2>Tell us what you need built</h2>
-          <p>Send an enquiry and we will reply AS SOON AS POSSIBLE.</p>
+          <p>Send an enquiry and we will reply as soon as possible.</p>
         </div>
 
         <div className="contact-grid">
           <div className="contact-info">
-            <p><FaWhatsapp aria-hidden="true" /> <a href={waLink()} target="_blank" rel="noopener noreferrer">{SITE.phoneDisplay}</a> (WhatsApp)</p>
-            <p><FaPhone aria-hidden="true" /> <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a></p>
-            <p><FaEnvelope aria-hidden="true" /> <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
-            <p>Working with clients worldwide.</p>
+            <p>Working with clients worldwide. Based in East Africa (UTC+3).</p>
+            <p>Prefer a quick message? Tap an icon below.</p>
             <SocialLinks />
           </div>
 
@@ -76,8 +73,8 @@ export default function Contact() {
               {status === 'sending' ? 'Sending...' : 'Send enquiry'}
             </button>
             <p className={`form-status ${status === 'sent' ? 'ok' : status === 'error' ? 'err' : ''}`} role="status" aria-live="polite">
-              {status === 'sent' && 'Enquiry sent. We will reply within one business day.'}
-              {status === 'error' && `Could not send. Please email ${SITE.email} or message us on WhatsApp.`}
+              {status === 'sent' && 'Enquiry sent. We will reply as soon as possible.'}
+              {status === 'error' && 'Could not send. Please use the email or WhatsApp icons on the left.'}
             </p>
           </form>
         </div>

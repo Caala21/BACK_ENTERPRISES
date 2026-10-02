@@ -56,7 +56,7 @@ export default function Privacy() {
       <p>If we change this policy, we will update the date above.</p>
 
       <h2>9. Contact</h2>
-      <p>Back Enterprise<br />Email: <a href={`mailto:${SITE.email}`}>{SITE.email}</a><br />Phone / WhatsApp: <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a></p>
-    </main>
+    <p>Back Enterprise<br />Email: <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+     </main>
   )
 }

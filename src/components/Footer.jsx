@@ -11,7 +11,6 @@ export default function Footer() {
           <div className="footer-links">
             <a href={waLink()} target="_blank" rel="noopener noreferrer">WhatsApp us</a>
             <a href={`mailto:${SITE.email}`}>Email us</a>
-            <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a>
           </div>
         </div>
         <SocialLinks />
