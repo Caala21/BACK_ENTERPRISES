@@ -10,6 +10,8 @@ export default function Navbar() {
           <a href="#services">Services</a>
           <a href="#work">Work</a>
           <a href="#process">Process</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
         </div>
         <a className="nav-cta" href="#contact">Start a project</a>
       </nav>
